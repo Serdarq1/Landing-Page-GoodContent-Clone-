@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GoodContent
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+            .header {
+               border-bottom-width: 1px;
+               background-color: white;
+               border-bottom-color: rgb(241, 241, 241);
+               box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+               border-bottom-style: solid;
+               position: fixed;
+               right: 0;
+               left: 0;
+               top: 0;
+               height: 80px;
+               z-index: 100;
+               font-family: Inter;
+               font-weight: 500;
+               font-size: 17px;
+               
+            }
+            .flexbox    {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .left-section, .middle-section, .right-section  {
+               display: flex;
+               height: 76px;
+               align-items: center;
+            }
+            .left-section:hover {
+                color: orange;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            .left-section   {
+                position: relative;
+                left: 20px;
+            }
+            .right-section {
+                height: 30px;
+                position: relative;
+                top: 25px;
+                right: 20px;
+                background-color: rgb(241, 111, 42);
+                color: white;
+                border:none;
+                border-radius: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                cursor: pointer;
+            }
+            .left-container    {
+                display: flex;
+                flex-direction: column;
+                font-family: inter;
+                margin-top: 80px;
+                margin-left: 20px;
+            }
+            .form   {
+                display: block;
+                margin-bottom: 12px;
+                border-color: rgb(240, 240, 240);
+                width: 200px;
+                border-width: 1px;
+                border-style: solid;
+                padding-left: 10px;
+                padding-right: 20px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-radius: 8px;
+            }
+            .title  {
+                color: rgb(58, 179, 167);
+                font-size: 35px;
+                font-weight: 500;
+                width: 420px;
+            }
+            .info   {
+                font-size: 16px;
+                width: 450px;
+                line-height: 22px;
+                margin-top:20px;
+                margin-bottom: 20px;
+            }
+            input   {
+                width: 15px;
+                height: 13px;
+            }
+            img {
+                width: 450px;
+                height: 550px;
+                object-fit: cover;
+                object-position: center;
+                position: relative;
+                right: 25px;
+                top: 50px;
+                box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
+                cursor: pointer;
+            }
+        </style>
+        <body>
+            <div class="header">
+                <div class="flexbox">
+                <div class="left-section">Good<span style="color:orange">Content</span></div>
+                <div class="middle-section"><span style="cursor: pointer;">Free tools v</span> <span style="margin-left: 20px;margin-right: 20px; cursor: pointer;">State of Content Marketing</span> <span style="cursor: pointer;">Free resources v</span> </div>
+                <button class="right-section">Create content with AI</button>
+            </div>
+            </div>
+            <div style="position: relative;
+            top: 100px;">
+                <div class="flexbox">
+            <div class="left-container">
+                <div class="title">Grow Your Business with Content Marketing in 2023</div>
+                <div class="info">Get a 360-degree view of where the content marketing industry has been, what you can expect now, and where it's headed in the next year.</div>
+                <div class="inputs">
+                    <input type="text" placeholder="First Name*" class="form">
+                    <input type="email" placeholder="Email*" class="form">
+                    <input type="text" placeholder="Organization Type*" class="form form-2">
+                    <input type="text" placeholder="Industry*" class="form">
+                </div>
+                <div class="terms-conditions"><input type="checkbox" style="display: inline-block; margin-right: 8px;"><span>Send me Semrush news, events and exclusive offers.</span></div>
+            </div>
+            <div class="right-container">
+                <img src="images/content.webp">
+            </div>
+            </div>
+            </div>
+        </body>
+    </head>
+</html>
